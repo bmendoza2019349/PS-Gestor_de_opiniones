@@ -20,7 +20,7 @@ const UserSchema = mongoose.Schema({
       state: {
         type: String,
         enum: ["Habilitado", "Suspendido", "Deshabilitado"],
-        default: Habilitado,
+        default: "Habilitado",
       },
 });
 
