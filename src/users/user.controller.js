@@ -12,7 +12,26 @@ export const usuariosPost = async (req, res) => {
     await user.save();
 
     res.status(200).json({
-        msg: "Se agrego el usuario correctamente",
+        msg: "The user was added successfully",
         user
     });
+}
+
+export const usersPut = async (req, res = response) => {
+    const { id } = req.params;
+    const {_id, password, email, ...resto} = req.body;
+
+    if(password){
+        const salt = bcryptjs.genSaltSync();
+        resto.password = bcryptjs.hashSync(password, salt);
+    }
+
+    await User.findByIdAndUpdate(id, resto);
+    const usuario = await User.findOne({_id: id});
+
+    res.status(200).json({
+        msg: 'The user has been successfully updated',
+        usuario
+    })
+    
 }
