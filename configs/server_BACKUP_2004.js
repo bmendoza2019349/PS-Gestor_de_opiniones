@@ -5,21 +5,21 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
 import { dbConnection } from './mongo.js';
-// <<<<<<< HEAD
-// import loginRoutes from '../src/auth/auth.routes.js';
-// =======
-// import publicRoutes from '../src/publications/public.routes.js';
-// >>>>>>> ft/publicaciones
+<<<<<<< HEAD
+import loginRoutes from '../src/auth/auth.routes.js';
+=======
+import publicRoutes from '../src/publications/public.routes.js';
+>>>>>>> ft/publicaciones
 
 class Server{
     constructor(){
         this.app = express();
         this.port = process.env.PORT;
-// <<<<<<< HEAD
-//         this.loginPath = '/api_Gestor/v1/users'
-// =======
-//         this.publicPath = '/api_Gestor/v1/public'
-// >>>>>>> ft/publicaciones
+<<<<<<< HEAD
+        this.loginPath = '/api_Gestor/v1/users'
+=======
+        this.publicPath = '/api_Gestor/v1/public'
+>>>>>>> ft/publicaciones
         this.middlewares();
         this.conectarDB();
         this.routes();
@@ -40,11 +40,11 @@ class Server{
     }
 
     routes(){
-// <<<<<<< HEAD
-//         this.app.use(this.loginPath, loginRoutes);
-// =======
-//         this.app.use(this.publicPath, publicRoutes);
-// >>>>>>> ft/publicaciones
+<<<<<<< HEAD
+        this.app.use(this.loginPath, loginRoutes);
+=======
+        this.app.use(this.publicPath, publicRoutes);
+>>>>>>> ft/publicaciones
     }
 
     listen(){
