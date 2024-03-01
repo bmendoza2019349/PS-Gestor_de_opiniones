@@ -6,6 +6,7 @@ import { validarJWT } from "../middlewares/validar-jwt.js";
 import { existePublicById } from "../helpers/db-validartors.js";
 import { validarUser } from "../middlewares/validar-users.js";
 import { validarPublic } from "../middlewares/validar-public.js";
+import { validatePublicComentD, validateUpdateComment } from "../middlewares/valid-publications.js";
 
 const router = Router();
 
@@ -66,6 +67,7 @@ router.put(
     check("commentId", "El commentId no es un formato valido de MongoDB").isMongoId(),
     check("text", "The comment text is mandatory").not().isEmpty(),
     validarCampos,
+    validateUpdateComment,
   ],
   updateComment
 );
@@ -79,6 +81,7 @@ router.delete(
     check("id").custom(existePublicById),
     check("commentId", "El commentId no es un formato valido de MongoDB").isMongoId(),
     validarCampos,
+    validatePublicComentD,
   ],
   deleteComment
 );
