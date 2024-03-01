@@ -3,7 +3,8 @@ import { check } from "express-validator";
 import { usuariosPost, usersPut } from "./user.controller.js";
 import { existeEmailUsuario, existeUserById } from "../helpers/db-validartors.js";
 import { validarCampos } from '../middlewares/validar-campos.js';
-
+import { validarJWT } from "../middlewares/validar-jwt.js";
+import { validarUsuario } from "../middlewares/validar-users.js";
 const router = Router();
 
 router.post(
@@ -22,9 +23,9 @@ router.post(
 router.put(
     "/:id",
     [
-        check("id", "It is not a valid id").isMongoId(),
-        check("id").custom(existeUserById),
+        validarJWT,
         validarCampos,
+        validarUsuario,
     ], usersPut);
 
 export default router;

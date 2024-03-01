@@ -8,7 +8,6 @@ const UserSchema = mongoose.Schema({
       email: {
         type: String,
         required: [true, "El correo es obligarorio"],
-        unique: true,
       },
       password: {
         type: String,
@@ -25,7 +24,7 @@ const UserSchema = mongoose.Schema({
 });
 
 UserSchema.methods.toJSON = function(){
-    const { _v, password, _id, ...user } = this.toObject();
+    const { _v, _id, ...user } = this.toObject();
     user.uid = _id;
     return user;
 }
