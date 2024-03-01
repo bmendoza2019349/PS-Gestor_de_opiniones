@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "65e135e7e05843ded0534101"
+  },
+  "title": "titlebeta1",
+  "category": "Estado",
+  "content": "mis recuerdos",
+  "user": {
+    "$oid": "65dd3ace81bc11c6d4c4b1b4"
+  },
+  "comments": [
+    {
+      "text": "Excelencia",
+      "user": {
+        "$oid": "65dfdcaa9d6affb483f07ff5"
+      },
+      "_id": {
+        "$oid": "65e13b0daad7d6bad01a855c"
+      }
+    },
+    {
+      "text": "Genial",
+      "user": {
+        "$oid": "65dfdcaa9d6affb483f07ff5"
+      },
+      "_id": {
+        "$oid": "65e169208dcb18d967ef8da9"
+      }
+    },
+    {
+      "text": "Excelencia2",
+      "user": {
+        "$oid": "65dd3ace81bc11c6d4c4b1b4"
+      },
+      "_id": {
+        "$oid": "65e169708dcb18d967ef8db6"
+      }
+    },
+    {
+      "text": "Genial3",
+      "user": {
+        "$oid": "65dd3af4b60f427776bc827a"
+      },
+      "_id": {
+        "$oid": "65e20789d2100d53b582bf27"
+      }
+    }
+  ],
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "65e135ffe05843ded0534105"
+  },
+  "title": "prueba2",
+  "category": "Historia",
+  "content": "mis recuerdos",
+  "user": {
+    "$oid": "65dd3ace81bc11c6d4c4b1b4"
+  },
+  "comments": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e13627e05843ded0534109"
+  },
+  "title": "prueba3",
+  "category": "Evento",
+  "content": "mis recuerdos",
+  "user": {
+    "$oid": "65dd3ace81bc11c6d4c4b1b4"
+  },
+  "comments": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e13734e05843ded053410e"
+  },
+  "title": "prueba4",
+  "category": "Actividad",
+  "content": "mis recuerdos",
+  "user": {
+    "$oid": "65dd3ace81bc11c6d4c4b1b4"
+  },
+  "comments": [],
+  "__v": 0
+}]

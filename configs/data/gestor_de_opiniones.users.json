@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "65dd3ab781bc11c6d4c4b1b1"
+  },
+  "name": "userbeta",
+  "email": "usuario1@kinal.edu",
+  "password": "$2a$10$kcR4qKKVfvJ1yfq4qnlmxusIGE1nVhP3jwMitdI6uYPOTNN15Dwoq",
+  "state": "Habilitado",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65dd3ace81bc11c6d4c4b1b4"
+  },
+  "name": "user2",
+  "email": "prueba2@kinal",
+  "password": "$2a$10$EZFmyzkRP3fkmlZievFIhuvb1TRqWYe1PNYNThlOshEVShxiwTrI2",
+  "state": "Habilitado",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65dd3af4b60f427776bc827a"
+  },
+  "name": "usuario3",
+  "email": "usuario3@kinal.edu",
+  "password": "$2a$10$TpZeSm0aZI9ZGrceicGGIuMBQrJKWG8eoudZfGzFEJL33eqsdZxn.",
+  "state": "Habilitado",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65dfdcaa9d6affb483f07ff5"
+  },
+  "name": "usuario4",
+  "email": "usuario4@kinal.edu",
+  "password": "$2a$10$VHFRJj/d1ThsNWlFRcO2bOQ/tc2bA4JVmrj1advMwwFZ3QUZHqqwi",
+  "state": "Habilitado",
+  "__v": 0
+}]

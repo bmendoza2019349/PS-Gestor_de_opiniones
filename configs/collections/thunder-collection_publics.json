@@ -1,0 +1,162 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "publics",
+    "dateExported": "2024-03-01T21:45:57.187Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "02e89ffe-9a98-40e0-a94d-26c44a1b8833",
+            "colId": "d7f093e5-1f96-4b9e-bc16-298b59f14111",
+            "containerId": "",
+            "name": "publicPost",
+            "url": "http://localhost:3000/api_Gestor/v1/public",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-28T05:56:22.420Z",
+            "modified": "2024-03-01T02:02:28.049Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkM2FjZTgxYmMxMWM2ZDRjNGIxYjQiLCJpYXQiOjE3MDkyNTU0NDYsImV4cCI6MTcwOTI1OTA0Nn0.5NPetSeivHLyhuIi3zMOzJjzrNlXt8GO8ZdkYYF1_jQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"prueba4\",\n  \"category\": \"Actividad\",\n  \"content\": \"mis recuerdos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c2a7f6d4-965b-4873-8b25-77ea8c5f0a64",
+            "colId": "d7f093e5-1f96-4b9e-bc16-298b59f14111",
+            "containerId": "",
+            "name": "publicPut",
+            "url": "http://localhost:3000/api_Gestor/v1/public/65e135e7e05843ded0534101",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-02-28T06:11:38.162Z",
+            "modified": "2024-03-01T02:03:49.023Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkM2FjZTgxYmMxMWM2ZDRjNGIxYjQiLCJpYXQiOjE3MDkyNTU0NDYsImV4cCI6MTcwOTI1OTA0Nn0.5NPetSeivHLyhuIi3zMOzJjzrNlXt8GO8ZdkYYF1_jQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"titlebeta1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "85bf096d-3a33-4981-92b8-c80b3a5c3323",
+            "colId": "d7f093e5-1f96-4b9e-bc16-298b59f14111",
+            "containerId": "",
+            "name": "publicDelete",
+            "url": "http://localhost:3000/api_Gestor/v1/public/65e13734e05843ded053410e",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-02-28T06:12:50.891Z",
+            "modified": "2024-03-01T02:09:53.901Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkM2FmNGI2MGY0Mjc3NzZiYzgyN2EiLCJpYXQiOjE3MDkyNTg4NDUsImV4cCI6MTcwOTI2MjQ0NX0.DRjUkuZEWMyshjh8pTO4MmWt0snSe9hipRT7MI6oulc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "661c55a4-ff44-4a64-a2d3-0e7840c6b1ee",
+            "colId": "d7f093e5-1f96-4b9e-bc16-298b59f14111",
+            "containerId": "",
+            "name": "updateComment",
+            "url": "http://localhost:3000/api_Gestor/v1/public/comment/65e135e7e05843ded0534101",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-01T00:46:06.525Z",
+            "modified": "2024-03-01T17:50:21.357Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkM2FmNGI2MGY0Mjc3NzZiYzgyN2EiLCJpYXQiOjE3MDkzMTE4NjUsImV4cCI6MTcwOTMxNTQ2NX0.b2paswc4Gl4f-xuFyEc_Q26eYpezXSVKhSq-57DSVDI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"commentId\":\"65e20793d2100d53b582bf34\",\n  \"text\": \"Excelencia2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "90f3f96e-6563-4a3b-a77a-c68baa7ac82d",
+            "colId": "d7f093e5-1f96-4b9e-bc16-298b59f14111",
+            "containerId": "",
+            "name": "deleteComment",
+            "url": "http://localhost:3000/api_Gestor/v1/public/65e135e7e05843ded0534101/comment",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-01T00:46:24.457Z",
+            "modified": "2024-03-01T17:52:45.023Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkM2FmNGI2MGY0Mjc3NzZiYzgyN2EiLCJpYXQiOjE3MDkzMTU1NTIsImV4cCI6MTcwOTMxOTE1Mn0.yd4vPh0wrvRJqiXCrY1PT9UnukSPxSGt2KnAm69mXZg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"commentId\": \"65e20793d2100d53b582bf34\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6ab47d51-2a4b-41c5-aa69-2cae6d8a82fc",
+            "colId": "d7f093e5-1f96-4b9e-bc16-298b59f14111",
+            "containerId": "",
+            "name": "addComment",
+            "url": "http://localhost:3000/api_Gestor/v1/public/comment",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-01T00:46:39.622Z",
+            "modified": "2024-03-01T16:51:32.019Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkM2FmNGI2MGY0Mjc3NzZiYzgyN2EiLCJpYXQiOjE3MDkzMTE4NjUsImV4cCI6MTcwOTMxNTQ2NX0.b2paswc4Gl4f-xuFyEc_Q26eYpezXSVKhSq-57DSVDI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"idPublications\":\"65e135e7e05843ded0534101\",\n  \"text\":\"Genial4\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9cf67ff1-6907-4259-ab93-541b570571d0",
+            "colId": "d7f093e5-1f96-4b9e-bc16-298b59f14111",
+            "containerId": "",
+            "name": "getComments",
+            "url": "http://localhost:3000/api_Gestor/v1/public/65e135e7e05843ded0534101",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-01T00:47:36.408Z",
+            "modified": "2024-03-01T13:55:12.903Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

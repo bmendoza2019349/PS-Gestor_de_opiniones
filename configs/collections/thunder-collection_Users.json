@@ -1,0 +1,71 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Users",
+    "dateExported": "2024-03-01T21:44:44.629Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "97cc77d8-c3c2-43ef-8b3f-3224fa90d3bc",
+            "colId": "d93e5820-b216-4383-85bd-5c1f4c1e5502",
+            "containerId": "",
+            "name": "userPost",
+            "url": "http://localhost:3000/api_Gestor/v1/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-27T01:16:21.233Z",
+            "modified": "2024-02-29T01:23:54.470Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"usuario4\",\n  \"email\": \"usuario4@kinal.edu\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8979760a-3841-42cf-b843-700d44be0ef2",
+            "colId": "d93e5820-b216-4383-85bd-5c1f4c1e5502",
+            "containerId": "",
+            "name": "userPut",
+            "url": "http://localhost:3000/api_Gestor/v1/users/65dd3ace81bc11c6d4c4b1b4",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-02-27T04:20:24.002Z",
+            "modified": "2024-03-01T00:00:47.714Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkM2FjZTgxYmMxMWM2ZDRjNGIxYjQiLCJpYXQiOjE3MDkyNTA2NjQsImV4cCI6MTcwOTI1NDI2NH0.MSmIaE6o6P1JgSGh8SYxxMuCWfyGIillZCNpctZjqJ8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"email\":\"prueba2@kinal\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6d718d23-516a-429a-ba85-d8361d6fdeef",
+            "colId": "d93e5820-b216-4383-85bd-5c1f4c1e5502",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/api_Gestor/v1/users/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-27T02:08:22.037Z",
+            "modified": "2024-03-01T05:38:26.279Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": \"usuario3\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
