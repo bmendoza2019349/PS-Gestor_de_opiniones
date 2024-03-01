@@ -27,6 +27,7 @@ export const publicPost = async (req, res) => {
 
 
 export const publicPut = async (req, res = response) => {
+    try {
     const { id } = req.params;
     const { user } = req;
     const { _id, ...resto } = req.body;
@@ -46,6 +47,11 @@ export const publicPut = async (req, res = response) => {
         msg: 'The post was updated successfully.',
         publics: publicationsActualizada
     });
+
+} catch (error) {
+    console.error("Error deleting publication:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+}
 }
 
 export const publicDelete = async (req, res) => {
@@ -75,8 +81,7 @@ export const publicDelete = async (req, res) => {
 
 export const addComment = async (req, res) => {
     try {
-        const { id } = req.params;
-        const { text } = req.body;
+        const {idPublications, text } = req.body;
         const userId = req.user._id;
 
         const comment = {

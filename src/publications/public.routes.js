@@ -46,11 +46,11 @@ router.delete(
   ], publicDelete);
 
 router.post(
-  "/comment/:id",
+  "/comment",
   [
     validarJWT,
-    check("id", "El id no es un formato valido de MongoDB").isMongoId(),
-    check("id").custom(existePublicById),
+    check("idPublications", "El id no es un formato valido de MongoDB").isMongoId(),
+    check("idPublications").custom(existePublicById),
     check("text", "The comment text is mandatory").not().isEmpty(),
     validarCampos,
   ],
@@ -88,7 +88,7 @@ router.delete(
 
 // New route for getting comments of a publication
 router.get(
-  "/comment/publicid/:id",
+  "/:id",
   [
     check("id", "El id no es un formato valido de MongoDB").isMongoId(),
     check("id").custom(existePublicById),
